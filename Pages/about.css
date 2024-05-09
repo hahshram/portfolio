@@ -1,0 +1,151 @@
+/* Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* includes padding, borders, etc. in size */
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    /* removes underline from links*/
+}
+
+/*reduces the default size from 16px to 10px 
+makes 1rem - 10pixels */
+html {
+    font-size: 62.5%;
+    background-color: rgb(228, 228, 228);
+    scroll-behavior: smooth;
+}
+
+/* End of Default Styles */
+
+/* Container */
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #202020;
+}
+
+.navbar {
+    background: rgb(201, 201, 201);
+    width: 100%;
+    height: 10rem;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    /*appears on top of everything else */
+}
+
+.menu-icon {
+    width: 4rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 45%;
+    right: 8rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.line {
+    width: 4rem;
+    height: .2rem;
+    background-color: black;
+}
+
+.navigation {
+    width: 100%;
+    height: 100vh;
+    background-color: #0b0b14;
+    opacity: 80%;
+    position: absolute;
+    top: -100vh;
+    /* makes navigation come down from top*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 2 columns */
+    grid-auto-rows: 50% 50%;
+    /* 2 rows for full screen */
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    /* z-index: 50; */
+}
+
+.change .navigation {
+    top: 0;
+}
+
+.navigation a {
+    font-size: 5rem;
+    color: #fff;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1rem;
+    justify-self: center;
+    opacity: 0;
+    visibility: hidden;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*shows the navigation on click */
+.change .navigation a {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* body */
+h1 {
+    padding: 30px;
+    text-decoration: none;
+    font-size: 30px;
+    font-style: Arial;
+}
+
+h1 a {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color:black;
+}
+
+.main {
+    font-family: "Kanit", sans-serif;
+    padding-top: 150px;
+    font-size: 25px;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 80px;
+}
+
+.main > img {
+    justify-content: center;
+    float: right;
+}
+
+.image {
+    flex: 1;
+}
+
+.text {
+    flex: 5;
+    padding-top: 130px;
+    padding-right: 100px;
+}
+
+.main1 {
+    font-family: "Kanit", sans-serif;
+    padding-top: 150px;
+    padding-left: 30px;
+    padding-right: 80px;
+    font-size: 25px;
+}
+
+.image2 {
+    padding-top: 50px;
+}

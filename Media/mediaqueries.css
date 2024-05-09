@@ -1,0 +1,27 @@
+/* ---- Default CSS -- */
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---- End of Default CSS -- */
+
+div {
+    background-color: azure;
+    height: 200px;
+    width: 200px;
+}
+
+@media (max-width: 600px){
+    div {
+        height: 50px;
+        width: 100px;
+        background-color: aqua;
+    }
+}
+
+@media (min-width: 600px){
+    div{
+        background-color: red;
+    }
+}

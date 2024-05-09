@@ -1,0 +1,59 @@
+/* ------- DEAFULT CSS ------- */
+html {
+    height: 100%;
+    width: 100%;
+    background-color: azure;
+}
+
+/* ---------- HEADER ---------- */
+
+header{
+    background-color: rgb(215, 255, 224);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h1 > a {
+    text-decoration: none;
+    color: black;
+}
+
+/* -------- NAVIGATION -------- */
+
+nav {
+    background-color: rgb(187, 211, 255);
+    margin: 1em;
+    grid-template-columns: 2fr 1fr;
+    display: grid;
+    grid-gap: 1em;
+}
+
+nav > div {
+    background-color: rgb(233, 215, 255);
+}
+
+.hamburger {
+    display: flex;
+    font-size: 100px;
+    float: right;
+    justify-content: flex-end;
+}
+
+/* ---- END OF NAVIGATION ----- */
+
+/* ------- END OF HEADER ------ */
+
+/* ----- MAIN PAGE CONTENT ---- */
+main {
+    background-color: aliceblue;
+}
+
+/* - END OF MAIN PAGE CONTENT - */
+
+/* ---------- FOOTER ---------- */
+footer {
+    background-color: cornsilk;
+}
+/* ------- END OF FOOTER ------ */

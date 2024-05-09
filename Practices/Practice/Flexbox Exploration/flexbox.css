@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    background-color: beige;
+    height: 50vh;
+    width: 100vw;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.box {
+    background-color: azure;
+    margin: 10px;
+    width: 100px; 
+}
+
+ .box1 {
+     background-color: blue;
+    /* flex: 3;
+    order: 4; */
+    align-self: self-start;
+    justify-self: center;
+}
+
+.box2 {
+    background-color: blueviolet;
+    /* flex: 1;
+    order: 3; */
+    align-self: self-end;
+}
+
+.box3 {
+    background-color: chartreuse;
+    /* flex: 5;
+    order: -2; */
+    align-self: center;
+}
+.box4 {
+    background-color: chocolate;
+    /* flex: 2;
+    order: 1; */
+    align-self: stretch;
+} 
